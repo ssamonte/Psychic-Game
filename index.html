@@ -1,14 +1,21 @@
-<!DOCTYOE html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Psychic Game</title>
+  <meta charset="UTF-8">
+  <title>Are you a Psychic? The Game</title>
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- JQuery -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+  <!-- CSS files -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 </head>
-
 <body>
     <script type="text/javascript">
 
-        // array of alphabets it can guess from"
-        var alphabet = ["a", "b", "c", "d","e","f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    <h1>Are you a psychic?</h1>
+    <h3><b>Instructions:</b> Guess what letter your computer has generated.</h3>
 
         // prompt a welcome
         var userName = prompt("Welcome! What's you're name?");
@@ -17,33 +24,18 @@
         var confirmPlay = confirm("Are you ready to play?");
 
         // wins score
-
+        <div id = "wins">Wins: </div>
         
         // losses score
-
+        <div id="losses">Losses: </div>
 
         // attempts left score
-
+        <div id="guessesLeft">Guesses Left: </div>
 
         // guesses made
 
 
-        // runs user input and determines which key was pressed
-        // computer chooses a letter from random from the alphabet array
-        document.onkeyup = function(event) {
-            var userGuesses = event.key;
-            var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length]
-        }
-        
 
-
-
-        
-
-        
-        
-
-        
 
     </script>
 </body>
